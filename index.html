@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- //begin -->
+  <body>
+    <div class="lazy">
+      <div class="greetings d-flex justify-content-center align-items-center">
+
+        <img
+          src="img/My project-1.png"
+          alt=""
+          class="logoLazy align-self-center"
+        />
+      </div>
+    </div>
+    <div class="subHeader"></div>
+    <div class="header d-flex">
+      <div
+        class="container d-flex flex-row justify-content-between align-items-center"
+      >
+        <div class="logo" onclick="scrollToTop()">
+          <img src="img/My project-1.png" alt="" />
+        </div>
+        <div>
+<select id="change-language">
+            <option value="it" >
+                Italiano
+            </option>
+            <option value="en" selected="selected">
+                English
+            </option>
+        </select>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="background"></div>
+    <div id="a" class="a"></div>
+    <div id="b" class="b"></div>
+    <div id="c" class="c"></div>
+    <div class="wrapper d-flex justify-content-around align-items-center">
+      <div class="section1 d-flex align-items-center justify-content-center">
+        <div class="d-flex">
+          <div class="intro">
+            <h1 class="intro text-center" data-i18n="intro"><h1 data-lang="it">
+            Ciao 👋🏼 , sono
+            </h1>
+            <h1 data-lang="en">
+                Hi 👋🏼 , I'm
+            </h1></h1>  
+            
+            <div class="waviy">
+              <p style="--i: 1">S</p>
+              <p style="--i: 2">T</p>
+              <p style="--i: 3">E</p>
+              <p style="--i: 4">F</p>
+              <p style="--i: 5">A</p>
+              <p style="--i: 6">n</p>
+              <span>-</span>
+              <p style="--i: 7">S</p>
+              <p style="--i: 8">i</p>
+              <p style="--i: 9">r</p>
+              <p style="--i: 10">g</p>
+              <p style="--i: 11">h</p>
+              <p style="--i: 12">i</p>
+              <p style="--i: 13">e</p>
+            </div>
+            <p data-lang="it">
+                ho 20 anni e sono un
+            </p>
+            <p data-lang="en">
+                a 20 years old
+            </p>
+            <p class="fS">Full stack</p>
+            <p class="intro">Junior web developer 💻</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2 d-flex flex-column align-self-center">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/Immagine.png" /></div>
+            <div class="swiper-slide"><img src="img/work.jpg" /></div>
+          </div>
+        </div>
+        <div class="collapseInfo">
+          <section class="ac-container">
+            <div>
+              <input id="ac-1" name="accordion-1" type="radio" checked="" />
+              <label for="ac-1" class="label">
+                <p data-lang="it">
+                SU DI ME
+            </p>
+            <p data-lang="en">
+                ABOUT ME
+            </p></label>
+              <article class="ac-small">
+                  <p data-lang="it">
+                    Sono uno sviluppatore professionista dal 2021, specializzato nello sviluppo di pagine web belle e funzionali. La mia formazione proviene da una delle migliori <a style="color:white" href="https://boolean.careers/?utm_source=google&utm_campaign=it_search_brand&utm_medium=cpc&utm_content=boolean&utm_term=boolean&gclid=CjwKCAjw6fyXBhBgEiwAhhiZsjji4I6tjOIOyTt01RcLCdaEtJNP8Vca3X1n_uoNxyjTu7qF9JzLWRoC6RcQAvD_BwE">accademy</a> di informatica in Italia, dove ho approfondito tutte le tematiche relative allo sviluppo di siti web. Grazie alle mie competenze, sono in grado di realizzare software adatti a qualsiasi esigenza e che rispettino gli standard più elevati in termini di usabilità e design.
+                    </p>
+                    <p data-lang="en">
+                        I am a professional developer since 2021, specialized in developing beautiful and functional web pages. My training comes from one of the best IT <a style="color:white"  href="https://boolean.careers/?utm_source=google&utm_campaign=it_search_brand&utm_medium=cpc&utm_content=boolean&utm_term=boolean&gclid=CjwKCAjw6fyXBhBgEiwAhhiZsjji4I6tjOIOyTt01RcLCdaEtJNP8Vca3X1n_uoNxyjTu7qF9JzLWRoC6RcQAvD_BwE">accademies </a> in Italy, where I studied all the thematics related to website development. Thanks to my skills, I am able to create websites that are suitable for any need and that meet the highest standards in terms of usability and design.
+                  </p>
+                  <div class="labelSocials-container">
+                <ul class="labelSocials">
+                  <a
+                    target="_blank"
+                    href="https://www.credential.net/7ab88336-7203-4720-a03c-81c52cd1a361#gs.8ipihf"
+                  >
+                    <li><i style="color: #2662A9;" class="fa-solid fa-graduation-cap icons"></i></li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/stefan-sirghie-9251951a8/"
+                  >
+                    <li style="color: #2662A9;"><i class="fa-brands fa-linkedin icons"></i></li>
+                  </a>
+                  
+                </ul>
+              </div>
+                <a class="toAnchor" href="#goAbout">
+                  <div data-lang="it">
+                  Altro           
+                </div>
+                <div data-lang="en">
+                    More
+                </div>
+                </a>
+              </article>
+            </div>
+
+            <div>
+              <input id="ac-3" name="accordion-1" type="radio" />
+              <label for="ac-3" class="label">
+                <p data-lang="it">
+                  I MIEI PROGETTI           
+                </p>
+                <p data-lang="en">
+                    MY PROJECTS
+                </p>
+</label>
+              <article class="ac-small">
+                  <p data-lang="it">
+                  Con oltre 60 progetti alle spalle, ho imparato HTML, CSS, JAVASCRIPT, PHP e varie librerie. Il mio codice è pulito, efficiente e affidabile – e lavoro sempre a stretto contatto con i clienti per assicurarmi che siano soddisfatti del prodotto finale.           
+                </p>
+                <p data-lang="en">
+                    With over 60 projects under my belt, I learned HTML, CSS, JAVASCRIPT, PHP and many libraries. My code is clean, efficient, and reliable – and I always work closely with clients to ensure they are happy with the end product.
+                </p>
+                  <div class="labelSocials-container">
+                  <ul class="labelSocials">
+                    <a class="githubButton" target="_blank" href="https://github.com/stfDeveloper">
+                      <li style=" color: white;">
+                        <i class="fa-brands fa-github icons">
+                        </i>
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <a class="toAnchor" href="#myProjects">
+                  <div data-lang="it">
+                  Altro           
+                </div>
+                <div data-lang="en">
+                    More
+                </div>
+                </a>
+              </article>
+            </div>
+            <div>
+              <input />
+              <a style="text-decoration: none" href="#hireMe">
+                <label for="ac-4" class="label"><p data-lang="it">
+                  ASSUMI           
+                </p>
+                <p data-lang="en">
+                    HIRE ME
+                </p></label>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="aboutContainer" id="goAbout">
+      <div class="about">
+        <div id="d" class="d"></div>
+        <div id="e" class="e"></div>
+        <section class="appearSection">
+          <div class="container reveal">
+            <div class="Me d-flex flex-column justify-content-center align-items-center ">
+              <div class="AboutCard1 ">
+                <img src="img/me.png" alt="" class="aboutImg " />
+              </div>
+              <div class="infoCard1">
+                <span>
+                  <div data-lang="it">
+                  Ho conseguito un'accreditazione da una delle migliori accademie IT in Italia, il che significa che produco sempre lavori di qualità. Se hai bisogno di avere un sito creato, o se il tuo attuale sito necessita di essere aggiornato, sono lo sviluppatore che stai cercando!           
+                </div>
+                <div data-lang="en">
+                    I hold an accreditation from the best IT accademy in Italy, meaning I always deliver quality work. Whether you need a website created, or your current one updated, I am the developer You are searching for!
+                </div>
+                  <br>
+                  <br>
+                  <div data-lang="it">
+                   Specializzato nella costruzione di bellissime e funzionali applicazioni web, ho anche esperienza nell'utilizzo di SalesForce e Shopify per lo sviluppo di e-commerce, altrettanto nella creazione di campagne pubblicitarie e contenuti con Photoshop e Adobe Premiere Pro.        
+                </div>
+                <div data-lang="en">
+                    Specialized in building beautiful and functional web applications, I also have experienced the use of SalesForce and Shopify for e-commerce development, as well as creating ad campaigns and content with Photoshop and Adobe Premiere Pro.
+                </div>
+                  
+                  <br>
+                  <br>
+                  <div data-lang="it">
+                   Le mie competenze sono in continua crescita e sono sempre alla ricerca di nuovi progetti su cui lavorare. Sono appassionato del mio lavoro e del mio stile di vita, il che mi ha reso più concentrato sulla crescita delle mie capacità e mentalità. Sono su un percorso disciplinato per il successo e mi impegno a fornire un lavoro di qualità che soddisfi o superi le aspettative dei miei clienti.     
+                </div>
+                <div data-lang="en">
+                    My skills are constantly growing, and I’m always looking for new projects to work on. I’m passionate about my work and lifestyle, which has made me more focused on the growth of my skills and mindset. I’m on a disciplined path for success, and committed to providing quality work that meets or exceeds my clients’ expectations.
+                </div>
+                  
+                </span>
+              </div>
+            </div> 
+            <p class="cV text-center">
+            <a
+              style="color: rgb(68, 155, 86); text-decoration: none"
+              href="CV.pdf"
+              target="_blank"
+              >
+              <h1 data-lang="it" class="text-center">
+                   Scarica CV
+                </h1>
+                <h1 data-lang="en" class="text-center">
+                   Download CV
+                </h1>
+              </a
+            >
+          </p>           
+          </div>
+          
+        </section>
+        
+      </div>
+      
+    </div>
+
+    <div
+      class="whatIDoContainer d-flex justify-content-center align-items-center flex-column"
+      id="whatIDo"
+    >
+    <h1 class="text-center HSkills">
+      <span data-lang="it">
+           Hard & Soft skills
+      </span>
+      <span data-lang="en">
+          Hard & Soft skills
+    </span>
+    </h1>
+    <div class="hardSkills d-flex flex-row justify-content-around align-items-center flex-wrap ">
+  <div class="skillsCard d-flex flex-column ">
+    <div class="skillsImg"><img src="img/coding.png" alt=""></div>
+    <div class="skillsInfo">
+      <h3 style="color: red">Developer</h3>
+      <p>
+      <span data-lang="it">
+           Scrivo codice pulito e comprensibile in qualsiasi lingua riconosca
+      </span>
+      <span data-lang="en">
+          I write clean and understandable code in any language I acknowledge
+      </span>
+        </p>
+    </div>
+  </div>
+   <div class="skillsCard d-flex flex-column">
+    <div class="skillsImg"><img src="img/web-design.png" alt=""></div>
+    <div class="skillsInfo"><h3 style="color: red">Web design</h3>
+      <p>
+        <span data-lang="it">
+           Faccio design con animazioni, font e colori per soddisfare le tue esigenze
+      </span>
+      <span data-lang="en">
+          I design pages with animations, fonts, and colors to reach your needs
+      </span>
+    </p></div>
+  </div>
+  
+   <div class="skillsCard d-flex flex-column">
+    <div class="skillsImg"><img class="w-100" src="img/copywriter.png" alt=""></div>
+    <div class="skillsInfo"><h3 style="color: red">Copywrite</h3>
+      <p>
+        <span data-lang="it">
+           Posso aiutarti a produrre contenuti di alta qualità che coinvolgeranno il tuo pubblico e convertiranno i prospetti in clienti
+      </span>
+      <span data-lang="en">
+         I can help you produce high quality content that will engage your audience and convert prospects into clients
+      </span></p></div>
+  </div>
+   <div class="skillsCard d-flex flex-column">
+    <div class="skillsImg"><img class="w-100" src="img/ads.png" alt=""></div>
+    <div class="skillsInfo"><h3 style="color: red">Ads</h3><p>
+      <span data-lang="it">
+           Ho imparato il targeting per qualsiasi prodotto o servizio con le inserzioni di Facebook
+      </span>
+      <span data-lang="en">
+          In my previous experiences, I learnt targeting for any products or services with Facebook ads
+      </span>
+      </p></div>
+  </div>
+</div>
+      <div class="whatIDo">
+        <div id="f" class="f"></div>
+        <div id="g" class="g"></div>
+        <section class="appearSection d-flex flex-column">
+          <div class="container reveal reveal2">
+            <div class="d-flex flex-row">
+              <div class="AboutCard2">
+                <img src="img/Immagine 2.png" alt="" class="aboutImg2" />
+              </div>
+              <div class="infoCard2 text-center">
+                <h1>Problem solving skills</h1>
+                <p>
+                  <span data-lang="it">
+                  Sono un problem solver. Ascolto attentamente per capire il problema e poi lavoro sodo per trovare una soluzione. Sono anche un ottimo descrittore, quindi posso aiutarti a capire cosa deve essere fatto e perché
+                  </span>
+                  <span data-lang="en">
+                     I am a problem solver. I listen carefully to understand the issue and then work hard to find a solution. I'm also a great describer, so I can help you understand what needs to be done and why
+                  </span>
+                  
+                </p>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-end">
+              <div class="infoCard2 text-center">
+                <div>
+                  <h1 data-lang="it">
+                  Sicuro e liscio
+                  </h1>
+                  <h1 data-lang="en">
+                     Secure and smooth
+                  </h1></div>
+                <p>
+                  <span data-lang="it">
+                  Di solito medito, mi fa sentire più presente. Ho imparato l'importanza dell'empatia e come avere un quoziente emotivo migliore
+                  </span>
+                  <span data-lang="en">
+                     I usually meditate, it makes me feel more present.I've
+                  learned the importance of being empathetic and how to have a
+                  better emotional quotient
+                  </span>
+                </p>
+              </div>
+              <div class="AboutCard2">
+                <img src="img/Immagine 5.png" alt="" class="aboutImg2" />
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="AboutCard2">
+                <img src="img/Immagine 6.png" alt="" class="aboutImg2" />
+              </div>
+              <div class="infoCard2 text-center">
+                <h1>
+                  <span data-lang="it">
+                  Concentrato e orientato
+                  </span>
+                  <span data-lang="en">
+                    Focused and oriented
+                  </span></h1>
+                <p>
+                  <span data-lang="it">
+                  Come molti imprenditori, sono un multitasker che può andare in più direzioni contemporaneamente. Ma dopo aver capito che il tempo è prezioso, ho deciso di concentrare tutte le mie energie sui miei sogni. Ora sono uno sviluppatore che può trasformare in realtà i tuoi sogni di business
+                  </span>
+                  <span data-lang="en">
+                    Like many entrepreneurs, I’m a multitasker who can go in multiple directions at once. But after I realized that time is precious, I decided to focus all my energy on my dreams. Now I’m a developer who can make your business dreams a reality
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  </div>
+    <div class="myProjectsContainer" id="myProjects">
+      <div class="myProjects d-flex align-items-center">
+
+        <div id="h" class="h"></div>
+        <div id="i" class="i"></div>
+        <section class="appearSection">
+      <h1 class="text-center" style="color: white; font-family: Noto Serif,serif, bold;"><p data-lang="it">
+                  I MIEI PROGETTI           
+                </p>
+                <p data-lang="en">
+                    MY PROJECTS
+                </p></h1>
+          <div class=" reveal reveal3">
+            <div class="projectRow d-flex flex-row justify-content-center">
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/dropbox.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <h1 class="text-center">Dropbox replica</h1>
+                  <div class="w-100 d-flex flex-row w-100">
+                    <div class="test"><img src="img/dropbox2.png" alt="" /></div>
+                    <div class="test2 text-right align-self-center">
+                      <p data-lang="it">
+                  Uno dei primi grandi progetti realizzati da me, la replica di dropbox è identica all'originale. Concentrato sul layout della pagina 
+                </p>
+                <p data-lang="en">
+                   One of the first projects after learning the basics of HTML and CSS was to replicate the layout of dropbox cloud service.It took me around 2 hours to finish this project and then pushed it to github
+                </p>
+                    </div>
+                  </div>
+                  
+                  <div class="w-100 d-flex flex-row-reverse ">
+                    <div class="test"><img src="img/dropbox3.png" alt="" /></div>
+                    <div class="test2 align-self-center">
+                      <p data-lang="it">
+                  Per questo progetto ho scritto codice html e css, dopo un periodo di esperienza sono riuscito a rifare il cloud completamente in javascript
+                </p>
+                <p data-lang="en">
+                   For this project I wrote html and css code, after a period of experience I was able to redo the cloud completely in javascript
+                </p>
+                    </div>
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/bootstrap.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <h1 class="text-center">Responsive Bootstrap</h1>
+                  <div class="d-flex flex-row w-100 flex-row-reverse">
+                    <div class="test"><img src="img/bootstrap2.png" alt="" /></div>
+                    <div class="test2 text-left align-self-center">
+                      <p data-lang="it">
+                  Un progetto per sporcarsi le mani con le landing page responsive, creazione di un sito portfolio personale con struttura pulita e relativo form di contatto
+                </p>
+                <p data-lang="en">
+                   A project to get hands dirty on responsive landing pages, it's about a personal portfolio with a clean design and a contact form to reach the owner
+                </p>
+                    </div>
+                  </div>
+                  
+                  <div class="w-100 d-flex ">
+                    <div class="test"><img src="img/bootstrap3.png" alt="" /></div>
+                    <div class="test2 text-right align-self-center">
+                      <p data-lang="it">
+                  Il primo della lunga serie con la popolare libreria bootstrap aggiornata, ho scritto codice html facilitato dall'apposito template che offre personalizzazioni illimitate
+                </p>
+                <p data-lang="en">
+                   The first of a long series with the updated bootstrap library, I wrote html code facilitated by the appropriate template that offers unlimited customizations
+                </p>
+                    </div>
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/playstation.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <h1 class="text-center">Playstation replica</h1>
+                  <div class="d-flex flex-row w-100">
+
+                    <div class="test"><img src="img/playstation2.png" alt="" /></div>
+                    <div class="test2 text-right align-self-center">
+                      <p data-lang="it">
+                    Il progetto piu' grande dall'inizio del mio percorso, impiegai una settimana in proprio per replicare il famoso sito Playstation
+                </p>
+                <p data-lang="en">
+                  The biggest project since the beginning of my career, it took me a week on my own to replicate the famous Playstation site
+                </p></div>
+                  </div>
+                  
+                  <div class="w-100 d-flex flex-row-reverse">
+                    <div class="test"><img src="img/playstation3.png" alt="" /></div>
+                    <div class="test2 align-self-center">
+                      <p data-lang="it">
+                    Progettato esclusivamente per essere identico all'originale e applicando le conoscenze che avevo, ho replicato ogni pixel grazie al tempo dedicato e la libreria bootstrap
+                </p>
+                <p data-lang="en">
+                  Uniquely designed to be identical to the original and applying the knowledge I had, I replicated every pixel thanks to the dedicated time and the bootstrap library
+                </p>
+                    </div>
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+            </div>
+            <div class="projectRow d-flex flex-row justify-content-center">
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/whatsapp.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <div class="d-flex flex-column">
+                  <h1 class="text-center whatsapp-title">Whatsapp replica</h1>
+                  <div>
+                    <div class="video">
+                      <video preload="auto" autoplay loop muted>
+                        <source src="boolzap.mov" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="text-center videoText">
+                      <p data-lang="it">
+                        Le chat sono state programmate con risposte automatiche, e rilevano l'orario dei messaggi mandati e ricevuti.
+                        <br>
+                          Sono capace di creare chat simili nei tuoi progetti con interlocutore e destinatario con messaggi istantanei salvati sul database
+                        </p>
+                        <p data-lang="en">
+                        The chats have been programmed with automatic replies, and detect the time of messages sent and received.
+                        <br>
+                        I am able to create similar chats in your projects with interlocutor and recipient with instant messages saved on the database
+                      </p>
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/netflix.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <h1 class="text-center">Netflix replica</h1>
+                  <div class="d-flex flex-row">
+                    <div class="netflix"><img src="img/netflix2.png" alt="" /></div>
+                    <div class="netlixText text-right">
+                      <p data-lang="it">
+                          Un grande progetto realizzato con VUEJS e chiamate axios.Una semplice ricerca di qualsiasi film o serie tv nell'input in alto ne ricerca il titolo e lo restituisce come oggetto nella pagina, si può visualizzare la descrizione, le lingue disponibili, la valutazione e molto altro
+                        </p>
+                        <p data-lang="en">
+                        
+                      </p></div>
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/instagram.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+
+                  <div class="d-flex flex-column">
+                  <h1 class="text-center whatsapp-title">Instagram replica</h1>
+                  <div>
+                    <div class="video">
+                      <video preload="auto" autoplay loop muted>
+                        <source src="instagram2.mov" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="text-center videoText">
+                      <p data-lang="it">
+                        Un progetto realizzato con VUEJS, permette agli utenti di visualizzare immagini pubblicate dagli admin in database. Esattamente come su instagram, è possibile mettere mi piace e visualizzarne il numero
+                        </p>
+                        <p data-lang="en">
+                        A project created with VUEJS, allows users to view images published by admins in the database. Just like instagram, likes are funcional and visible.
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                  <div class="closeX"><h1>&#10006</h1></div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="projectRow d-flex flex-row justify-content-center">
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/database.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <h1 class="text-center">Database project</h1>
+
+                  <div class="d-flex flex-row w-100">
+                    <div class="test"><img src="img/database2.jpeg" alt="" /></div>
+                    <div class="test2 text-center align-self-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro animi libero. Rem eligendi sint obcaecati corporis cum commodi magni.</div>
+                  </div>
+                  
+                  <div class="d-flex flex-row-reverse w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 align-self-center">heloooo</div>
+                  </div>
+                  
+                  <div class="d-flex flex-row w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 align-self-center">heloooo</div>
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/spotify.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <h1 class="text-center">Spotify replica</h1>
+
+                  <div class="d-flex flex-row w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 text-center align-self-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro animi libero. Rem eligendi sint obcaecati corporis cum commodi magni.</div>
+                  </div>
+                  
+                  <div class="d-flex flex-row-reverse w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 align-self-center">heloooo</div>
+                  </div>
+                  
+                  <div class="d-flex flex-row w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 align-self-center">heloooo</div>
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+              <div class="AboutCard">
+                <button class="buttonProj">
+                  <img src="img/comics.png" alt="" class="aboutImg3" />
+                </button>
+                <div class="showProject container">
+                  <h1 class="text-center">DC Comics replica</h1>
+
+                  <div class="d-flex flex-row w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 text-center align-self-center">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet porro animi libero. Rem eligendi sint obcaecati corporis cum commodi magni.</div>
+                  </div>
+                  
+                  <div class="d-flex flex-row-reverse w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 align-self-center">heloooo</div>
+                  </div>
+                  
+                  <div class="d-flex flex-row w-100">
+                    <div class="test"><img src="img/Immagine.png" alt="" /></div>
+                    <div class="test2 align-self-center">heloooo</div>
+                  </div>
+                  <div class="closeX"><h1>&#10006</h1></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="hireMeContainer" id="hireMe">
+      <div class="hireMe d-flex justify-content-center align-items-center">
+        <div id="j" class="j"></div>
+        <div id="k" class="k"></div>
+        <div id="l" class="l"></div>
+        <div id="m" class="m"></div>
+
+        <section
+          class="appearSection"
+        >
+          <div class="container reveal reveal4">
+            <div class="d-flex">
+              <div class="social-container">
+                <ul class="socials">
+                  <a class="githubButton" target="_blank" href="https://github.com/stfDeveloper">
+                    <li style=" color: white;"><i class="fa-brands fa-github icons"></i></li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/stefan-sirghie-9251951a8/"
+                  >
+                    <li style="color: #2662A9;"><i class="fa-brands fa-linkedin icons"></i></li>
+                  </a>
+                  <a
+                    href="mailto:sstefancosmin@icloud.com"
+                    onclick="window.location.href='np.html'"
+                  >
+                    <li style="color: white;"><i><h1>@</h1></i></li>
+                  </a>
+                  <a
+                    href="https://wa.me/+393299843354?text=Ciao%20Stefan,mi chiamo"
+                  >
+                    <li style="color:green"><i class="fa-brands fa-whatsapp icons"></i></li>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/stf.cosmin/"
+                  >
+                    <li ><i style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                          -webkit-background-clip: text;
+                                  background-clip: text;
+                          -webkit-text-fill-color: transparent;" class="fa-brands fa-instagram icons"></i></li>
+                  </a>
+                </ul>
+              </div>
+              
+              <div class="mapContainer">
+                <div id="map"></div>
+                <div
+              class="end d-flex flex-row justify-content-center align-items-center"
+            >
+              <h1 data-lang="it">
+                  Teniamoci in contatto!          
+                </h1>
+                <h1 data-lang="en">
+                    Let's keep in touch
+                </h1>
+              <i class="fa fa-long-arrow-left arrow1" aria-hidden="true"></i>
+                <img src="img/Immagine.png" class="callMe" />
+              <div class="hide">+39 329 984 3354</div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="rights d-flex justify-content-around align-items-center">
+          <div>Powered by <h4>Stefan</h4></div>
+          <div>
+            <a href="https://www.instagram.com/stf.cosmin/">CODE SOURCE</a>
+          </div>
+          <div>
+            <a
+              href="https://www.termsfeed.com/live/9fb81b70-b4da-4dd1-81a3-4c2d2620f12a"
+              >PRIVACY POLICY</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+
+  <script src="src/js/script.js"></script>
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- Initialize Swiper 2 -->
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/i18n-language@latest/i18n-language.js"></script>
+</html>
