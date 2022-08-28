@@ -86,18 +86,6 @@ body {
   width: 30vw;
   height: 30vh;
 }
-.background {
-  z-index: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgb(0, 0, 0) !important;
-  background: linear-gradient(
-    5deg,
-    rgba(0, 0, 0, 1) 0%,
-    blue(33, 33, 33, 1) 100%
-  ) !important;
-  position: absolute;
-}
 div.a {
   width: 0;
   height: 0;
@@ -107,7 +95,7 @@ div.a {
   top: 100px;
   opacity: 0.3;
   z-index: 2;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 
@@ -121,7 +109,7 @@ div.b {
   border-right: 12px solid rgba(68, 165, 86, 0.16);
   border-bottom: 12px solid rgba(68, 165, 86, 0.418);
   border-top: 12px solid rgba(68, 165, 86, 0.16);
-  position: relative;
+  position: absolute;
   z-index: 2;
   opacity: 0.3;
   overflow: hidden;
@@ -134,7 +122,7 @@ div.c {
   opacity: 0.3;
   overflow: hidden;
   border-radius: 10%;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 div.d {
@@ -146,7 +134,7 @@ div.d {
   background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
   opacity: 0.3;
   border-radius: 10%;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 }
@@ -157,7 +145,7 @@ div.e {
   background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
   opacity: 0.3;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 }
@@ -168,7 +156,7 @@ div.f {
   background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
   opacity: 0.3;
   border-radius: 10%;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 }
@@ -184,7 +172,7 @@ div.g {
   );
   opacity: 0.3;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 }
@@ -199,11 +187,10 @@ div.h {
     #ffcc70 100%
   );
   overflow: hidden;
-
   opacity: 0.3;
   border-radius: 10%;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  z-index: 5;
 }
 div.i {
   width: 50px;
@@ -214,7 +201,7 @@ div.i {
 
   opacity: 0.3;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 div.j {
@@ -231,7 +218,7 @@ div.j {
 
   opacity: 0.3;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 div.k {
@@ -240,7 +227,7 @@ div.k {
   background-color: #85ffbd;
   background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
   opacity: 0.3;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 }
@@ -250,7 +237,7 @@ div.l {
   background-color: #fbda61;
   background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
   opacity: 0.3;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 }
@@ -262,7 +249,7 @@ div.m {
   border-color: transparent transparent #fbab7e transparent;
   background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
   opacity: 0.3;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 }
@@ -287,7 +274,8 @@ div.m {
   z-index: 3;
 }
 .logo {
-  height: 85%;
+  width: 80px;
+  height:80px;
 }
 .logo img {
   border-radius: 50%;
@@ -313,11 +301,9 @@ div.m {
   color: rgba(68, 165, 86, 0.7);
 }
 .wrapper {
+  background-color: black;
   width: 100vw;
-  padding-bottom: 300px;
-}
-.section1 {
-  padding: 30px;
+  height: 110vh;
 }
 .waviy {
   position: relative;
@@ -337,15 +323,11 @@ div.m {
     transform: rotateY(360deg);
   }
 }
-.section2 {
-  padding-top: 100px;
-}
-
 .swiper {
-  width: 200px !important;
-  height: 200px !important;
+  width: 180px ;
+  height: 180px ;
   border-radius: 50%;
-  border: 3px solid rgb(68, 165, 86);
+  border: 1px solid rgb(68, 165, 86);
 }
 
 .swiper-slide img {
@@ -494,35 +476,41 @@ div.m {
     rgba(33, 33, 33, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
-  height: 110vh;
 }
 .about {
   width: 90vw;
-  height: 110vh;
-  margin: auto;
   background: rgba(0, 0, 0, 0, 7);
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
   overflow: hidden;
+  margin: 0 auto;
+  border-bottom: 1px solid #44a55614;
+}
+.aboutWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 5%;
 }
 .HSkills {
   color: white;
   z-index: 1;
+  padding-bottom: 60px;
 }
 .hardSkills {
-  width: 100vw;
   font-family: "Noto Serif", serif, bold;
-  padding: 30px;
+  margin-bottom: 40px;
 }
 .skillsCard {
-  width: 150px;
-  height: 350px;
+  width: 50%;
+  height: 50%;
   z-index: 2;
 }
 .skillsImg {
   border-radius: 10px;
-  width: 100%;
+  width: 30%;
   align-self: center;
 }
 .skillsImg img {
@@ -533,26 +521,30 @@ div.m {
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(12.2px);
   -webkit-backdrop-filter: blur(10.2px);
+  width: 400px;
   align-self: center;
-  width: 300px;
-  min-height: 210px;
+  height: 150px;
   color: white;
   padding: 5px;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   text-align: center;
 }
 .whatIDoContainer {
+  padding-bottom: 50px;
   width: 100vw;
-  height: 110vh;
   z-index: 0;
   background-image: url("../img/—Pngtree—polka dot pattern_5956638.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: 300%;
 }
 
 .whatIDo {
+  padding: 5%;
   width: 100vw;
   background: rgba(0, 0, 0, 0, 7);
 }
@@ -563,27 +555,32 @@ div.m {
     rgba(0, 0, 0, 1) 100% rgba(33, 33, 33, 1) 0%
   );
   width: 100vw;
-  height: 120vh;
-}
-.projectRow {
-  width: 90vw;
+ 
 }
 .myProjects {
+  padding-top: 100px;
   width: 90vw;
-  height: 120vh;
   margin: 0 auto;
+  border: 1px solid #44a55614;
   background: rgba(0, 0, 0, 0, 7);
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
-  padding: 0;
+}
+.h1proj{
+  position: relative;
+  top: -70px;
+}
+.showProject h1{
+  position: absolute;
+  top: 20px;
+  color: #44A556;
 }
 .hireMeContainer {
   position: relative;
   bottom: 0;
   width: 100vw;
-  height: 115vh;
-  padding-top: 50px;
+  height: 100vh;
 }
 .hireMe {
   width: 100vw;
@@ -608,28 +605,27 @@ a.toAnchor {
 }
 .reveal {
   position: relative;
-  transform: translateX(-150px);
+  transform: translateY(150px);
   opacity: 0;
-  transition: 1.5s all ease;
+  transition: 1s all ease;
+}
+.reveal1 {
+  position: relative;
+  transform: translateY(250px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 .reveal2 {
   position: relative;
-  transform: translateX(150px);
+  transform: translateX(250px);
   opacity: 0;
-  transition: 1.5s all ease;
+  transition: 1s all ease;
 }
 .reveal3 {
   position: relative;
-  transform: translateX(-150px);
+  transform: translateX(-250px);
   opacity: 0;
-  transition: 1.5s all ease;
-}
-
-.reveal4 {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1.5s all ease;
+  transition: 1s all ease;
 }
 .reveal.active {
   transform: translateY(0);
@@ -637,10 +633,7 @@ a.toAnchor {
 }
 
 .AboutCard1 {
-  width: 50%;
   height: 100%;
-  background-color: red;
-  margin: 10px;
   border-radius: 50px;
 }
 .infoCard1 {
@@ -650,17 +643,18 @@ a.toAnchor {
   font-family: "Noto Serif", serif, bold;
   color: white;
   overflow: hidden;
-  margin: 10px;
+  margin: 20px;
 }
 .cV {
-  font-family: "Noto Serif", serif, bold;
+  margin: 20px;  font-family: "Noto Serif", serif, bold;
 }
 .aboutImg {
   align-self: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50px;
+  border-radius: 10%;
+  background-color: red;
 }
 .aboutImg2 {
   width: 200px;
@@ -687,8 +681,11 @@ a.toAnchor {
   font-size: 20px;
   padding: 10px;
 }
-.infoCard2 h1 {
-  color: red;
+.skillsInfo h3{
+    color: #44A556;
+  }
+.infoCard2 h3 {
+  color: #44A556;
 }
 
 .mapContainer {
@@ -776,8 +773,7 @@ img.callMe {
 .hide {
   display: none;
   position: absolute;
-  bottom: -20px;
-  left: 0;
+  bottom: 100px;
   background-color: #212121;
   padding: 10px;
   color: rgb(68, 165, 86);
@@ -799,7 +795,7 @@ img.callMe {
   height: 50px;
   position: absolute;
   bottom: 0;
-  background-color: #262626;
+  background-color: #44A556;
   color: white;
   padding: 40px;
 }
@@ -815,8 +811,8 @@ img.callMe {
 }
 
 .test img {
-  width: 350px !important;
-  height: 350px !important;
+  width: 300px !important;
+  height: 300px !important;
   object-fit: contain;
 }
 .netlix {
@@ -848,9 +844,9 @@ div.video {
   font-size: 25px;
 }
 .buttonProj img {
-  width: 320px;
+  width: 280px;
   height: 232px;
-  margin: 20px;
+  margin: 10px;
   z-index: 5;
   object-fit: contain;
 }
@@ -905,15 +901,26 @@ div.closeX {
     width: 30%;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1250px) {
   /* For tablets: */
   .wrapper {
+    padding-top: 200px;
     background-color: black;
-    height: 150vh;
+    height: 170vh;
     flex-direction: column;
   }
+  div.intro>*{ 
+    font-size: 80px;
+  }
+  .waviy p{
+      font-size: 80px;
+    }
   .intro {
     text-align: center;
+  }
+  .swiper{
+    width:300px;
+    height:300px;
   }
   .ac-container input:checked ~ article.ac-small {
     object-fit: contain;
@@ -927,7 +934,7 @@ div.closeX {
   }
   ul.labelSocials {
     height: 80px;
-    width: 60%;
+    width: 70%;
   }
   .labelSocials li {
     width: 80px;
@@ -936,57 +943,40 @@ div.closeX {
   .infoCard1 {
     font-size: 15px;
   }
-  .cV {
-    font-size: 15px;
-  }
   .socials li {
     width: 80px;
     height: 80px;
   }
-  .skillsCard {
-    width: 40%;
-    height: 40%;
-  }
-  .skillsImg {
-    width: 80%;
-  }
-  .infoCard2 {
-    height: 250px;
-  }
-  .whatIDoContainer {
-    height: 190vh;
-    background-size: 300%;
-  }
-  .myProjectsContainer {
-    height: 165vh;
-  }
-  .myProjects {
-    height: 165vh;
-    overflow-x: scroll;
-  }
-  .buttonProj {
-    margin: 10px;
-  }
-  img.aboutImg3 {
-    width: 250px;
-  }
-  .buttonProj img {
-    margin: 0;
-    padding: 0;
-  }
-  div.aboutCard {
-    padding: 0;
-  }
-  .projectRow {
-    flex-wrap: wrap;
-  }
+}
 
-  .buttonProj:focus + .showProject {
-    position: relative;
-    top: 450px;
+@media only screen and (max-width: 1100px) {
+  .buttonProj img {
+    width:260px;
+    height:220px;
   }
-  .buttonProj:focus {
-    position: relative;
-    top: 450px;
+}
+@media only screen and (max-width: 1000px) {
+  div.intro>* {
+      font-size: 60px;
+    }
+    .waviy p {
+      font-size: 60px;
+    }
+  .buttonProj img {
+    width: 240px;
+    height: 200px;
+  }
+    .aboutWrapper{
+      flex-direction: column;
+    }
+  .skillsInfo{
+    width:300px;
+    height:200px
+  }
+}
+@media only screen and (max-width: 900px) {
+  .buttonProj img {
+    width: 220px;
+    height: 180px;
   }
 }
