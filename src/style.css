@@ -573,6 +573,7 @@ div.m {
 }
 .showProject h1{
   position: absolute;
+  border-bottom: 1px solid white;
   top: 20px;
   color: #44A556;
 }
@@ -673,13 +674,17 @@ a.toAnchor {
 .infoCard2 {
   margin: 10px;
   width: 750px;
-  height: 200px;
   background: #262626;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
   color: white;
   font-family: "Noto Serif", serif, bold;
   font-size: 20px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  animation-delay: 2s;
 }
 .skillsInfo h3{
     color: #44A556;
@@ -748,6 +753,9 @@ a.toAnchor {
   width: 100%;
   height: 200px;
   color: white;
+  width: 500px;
+  position: relative;
+  right: 100px;
 }
 img.callMe {
   width: 100px;
@@ -772,8 +780,6 @@ img.callMe {
 
 .hide {
   display: none;
-  position: absolute;
-  bottom: 100px;
   background-color: #212121;
   padding: 10px;
   color: rgb(68, 165, 86);
@@ -786,6 +792,9 @@ img.callMe {
   background-color: #212121;
 }
 .callMe:hover + .hide {
+  position: absolute;
+  top: 150px;
+  width:500px;
   display: block;
   border: 0;
 }
@@ -828,7 +837,7 @@ img.callMe {
   margin: auto auto;
 }
 div.video {
-  width: 70%;
+  width: 60%;
   margin: auto; 
   margin-bottom: 30px;
   margin-top: 30px;
@@ -888,8 +897,21 @@ div.closeX {
   height: 50px;
   cursor: pointer;
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 1781px) {
+  .projectRow {
+    padding: 100px;
+  }
+}
+@media only screen and (min-width: 1380px){
+  .myProjects {
+      padding-left: 10% !important;
+      padding-right: 10% !important;
+    }
 }
 @media only screen and (max-width: 1400px) {
   /* for laptops */
@@ -904,10 +926,12 @@ div.closeX {
 @media only screen and (max-width: 1250px) {
   /* For tablets: */
   .wrapper {
-    padding-top: 200px;
     background-color: black;
-    height: 170vh;
+    height: 160vh;
     flex-direction: column;
+  }
+  .section2{
+    padding-bottom:90px;
   }
   div.intro>*{ 
     font-size: 80px;
@@ -956,6 +980,10 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 1000px) {
+  img.aboutImg2 {
+    width: 100px;
+      height: 100px;
+    }
   div.intro>* {
       font-size: 60px;
     }
@@ -971,12 +999,96 @@ div.closeX {
     }
   .skillsInfo{
     width:300px;
-    height:200px
+    height:180px
   }
 }
 @media only screen and (max-width: 900px) {
+  .skillsImg{
+    width: 50%;
+  }
   .buttonProj img {
     width: 220px;
     height: 180px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  
+  div.intro>* {
+      font-size: 50px;
+    }
+    .waviy p {
+      font-size: 50px;
+    }
+    .end{
+      right: 200px;
+    }
+}
+@media only screen and (max-width: 730px) {
+  .skillsInfo {
+    width:260px;
+  }
+  .ac-container {
+      width: 80%;
+    }
+  .ac-container input:checked~article.ac-small{
+    height:250px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .end {
+      right: 230px;
+    }
+  .ac-container {
+    width: 75%;
+  }
+  .ac-container input:checked~article.ac-small {
+    height: 260px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ac-container {
+    width: 70%;
+  }
+  .ac-container input:checked~article.ac-small {
+    height: 270px;
+  }
+    .skillsInfo {
+      width: 240px;
+    }
+}
+@media only screen and (max-width: 580px) {
+  .ac-container {
+    width: 65%;
+  }
+
+  .ac-container input:checked~article.ac-small {
+    height: 280px;
+  }
+
+  .skillsInfo {
+    width: 240px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .ac-container {
+    width: 70%;
+  }
+
+  .ac-container input:checked~article.ac-small {
+    height: 270px;
+  }
+
+  .skillsInfo {
+    width:220px;
+    height:300px;
+  }
+}
+@media only screen and (max-width: 620px){
+div.intro>* {
+    font-size: 40px;
+  }
+
+  .waviy p {
+    font-size: 40px;
   }
 }
