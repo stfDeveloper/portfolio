@@ -1081,20 +1081,6 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 550px) {  
-  .wrapper {
-    padding-top: 200px;
-  }
-  .section2{
-    padding-top: 50px;
-  }
-  .hireMe{
-   margin-top: 100px;
-    padding-bottom: 300px;
-  }
-    .hireMeContainer {
-   margin-top: 100px;
-      padding-bottom: 300px;
-    }
   .swiper{
     width: 250px;
     height:250px;
