@@ -304,7 +304,7 @@ div.m {
 .wrapper {
   background-color: black;
   width: 100vw;
-  height: 110vh;
+  padding-top: 150px;
   overflow-x: hidden;
 }
 .waviy {
@@ -472,6 +472,7 @@ div.m {
 }
 
 .aboutContainer {
+  width: 100vw;
   background: rgb(33, 33, 33);
   background: linear-gradient(
     0deg,
@@ -547,7 +548,7 @@ div.m {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: 300%;
+  background-size: 100%;
 }
 
 .whatIDo {
@@ -651,7 +652,6 @@ a.toAnchor {
 .infoCard1 {
   height: 100%;
   font-size: 20px;
-  padding: 15px;
   font-family: "Noto Serif", serif, bold;
   color: white;
   overflow: hidden;
@@ -840,18 +840,15 @@ img.callMe {
   margin: auto auto;
 }
 div.video {
-  width: 60%;
-  margin: auto; 
-  margin-bottom: 30px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .video video {
-  width: 100%;
+  width: 80%;
 }
 .test2,
 .videoText {
-  padding-left: 75px;
-  padding-right: 75px;
   font-family: "Helvetica Neue", bold;
   font-size: 25px;
 }
@@ -878,17 +875,19 @@ div.video {
   background-color: rgb(68, 165, 86) !important;
 }
 .buttonProj:focus + .showProject {
+  padding-top:100px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border: 0.1px solid rgba(255, 255, 255, 0.13);
   border-radius: 13px;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
   z-index: 2;
   height: 100%;
   width: 100%;
@@ -927,14 +926,12 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 1250px) {
+  .whatIDoContainer {background-size: 200%;}
   /* For tablets: */
   .wrapper {
     background-color: black;
     height: 160vh;
     flex-direction: column;
-  }
-  .section2{
-    padding-bottom:90px;
   }
   div.intro>*{ 
     font-size: 80px;
@@ -1005,7 +1002,11 @@ div.closeX {
     height:180px
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 910px) {
+  .buttonProj:focus + .showProject{
+    position: relative;
+    height:75%;
+  }
   #map{
     width:400px;
     height:400px;
@@ -1024,9 +1025,8 @@ div.closeX {
   .skillsImg{
     width: 50%;
   }
-  .buttonProj img {
-    width: 220px;
-    height: 180px;
+    div.video{
+    width: 100%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -1053,12 +1053,21 @@ div.closeX {
         
 }
 @media only screen and (max-width: 630px) {
+  .videoText p{
+    font-size: 15px;
+  }
   .end {
       right: 230px;
     }
    
 }
 @media only screen and (max-width: 600px) {
+  .buttonProj:focus+.showProject {
+      height: 65%;
+    }
+.whatIDoContainer {
+    background-size: 300%;
+  }
   .social-container {
       padding-right: 80px;
     }
@@ -1107,6 +1116,9 @@ div.intro>* {
   }
 }
 @media only screen and (max-width: 605px){
+  .showProject h1{
+    font-size:18px;
+  }
   .end h1{
     font-size:20px;
   }
@@ -1201,6 +1213,9 @@ div.intro>* {
     
 }
 @media only screen and (max-width: 430px){
+  .whatIDoContainer {
+      background-size: 400%;
+    }
   .skillsCard {
       width: 100%;
     }
@@ -1246,8 +1261,15 @@ div.intro>* {
     margin-bottom: 20px;
   }
 }
-@media only screen and (max-width: 370px){
-  
+@media only screen and (max-width: 380px){
+  .ac-container input:checked ~ article.ac-small{
+    height:240px;
+  }
+  .swiper{
+    width:120px;
+    height: 120px;
+    margin-bottom: 45px;
+  }
   div.intro>* {
       font-size: 26px;
     }
