@@ -479,20 +479,20 @@ div.m {
     rgba(33, 33, 33, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
+  padding-bottom: 100px;
+
 }
 .about {
-  overflow: hidden;
   width: 90vw;
+  padding-bottom: 100px;
   background: rgba(0, 0, 0, 0, 7);
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
-  overflow: hidden;
   margin: 0 auto;
   border-bottom: 1px solid #44a55614;
 }
 .aboutWrapper {
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -646,10 +646,12 @@ a.toAnchor {
 }
 
 .AboutCard1 {
-  height: 100%;
-  border-radius: 50px;
+  width: 300px;
+  height: 350px;
+  border-radius: 20%;
 }
 .infoCard1 {
+  width: 50%;
   height: 100%;
   font-size: 20px;
   font-family: "Noto Serif", serif, bold;
@@ -657,8 +659,15 @@ a.toAnchor {
   overflow: hidden;
   margin: 20px;
 }
-.cV {
-  margin: 20px;  font-family: "Noto Serif", serif, bold;
+.cV >* { 
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+    bottom: -100px;
+    transform: translate( -50%,-50%);
+    margin: 0 auto;
+  font-family: "Noto Serif", serif, bold;
 }
 .aboutImg {
   align-self: center;
@@ -666,7 +675,7 @@ a.toAnchor {
   height: 100%;
   object-fit: cover;
   border-radius: 10%;
-  background-color: red;
+  background-color: #cc0000;
 }
 .aboutImg2 {
   width: 200px;
@@ -926,6 +935,14 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 1250px) {
+  .hireMe {
+      padding-bottom: 150px;
+  
+    }
+  
+    .hireMeContainer {
+      padding-bottom: 150px;
+    }
   .whatIDoContainer {background-size: 200%;}
   /* For tablets: */
   .wrapper {
@@ -933,6 +950,7 @@ div.closeX {
     height: 160vh;
     flex-direction: column;
   }
+  
   div.intro>*{ 
     font-size: 80px;
   }
@@ -980,6 +998,11 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 1000px) {
+  .infoCard1 {
+    padding: 0;
+    width: 100%;
+  }
+
   img.aboutImg2 {
     width: 100px;
       height: 100px;
@@ -1003,6 +1026,7 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 910px) {
+
   .buttonProj:focus + .showProject{
     position: relative;
     height:75%;
@@ -1213,6 +1237,9 @@ div.intro>* {
     
 }
 @media only screen and (max-width: 430px){
+  .hireMe {height:120vh}
+  
+    .hireMeContainer {height:120vh}
   .whatIDoContainer {
       background-size: 400%;
     }
@@ -1261,7 +1288,30 @@ div.intro>* {
     margin-bottom: 20px;
   }
 }
+@media only screen and (max-width: 370px){
+  
+  .end h1{
+    font-size:16px;
+  }
+}
 @media only screen and (max-width: 380px){
+  .HSkills
+  {
+      font-size: 28px;
+    }
+    .h1proj{
+        font-size: 28px;
+      }
+   .cV a{
+    font-size: 28px;
+  }
+  .skillsInfo{
+    height:150px;
+  }
+  .labelSocials li {
+    width:50px;
+    height: 50px;
+  }
   .ac-container input:checked ~ article.ac-small{
     height:240px;
   }
@@ -1277,4 +1327,78 @@ div.intro>* {
     .waviy p {
       font-size: 26px;
     }
+    .rights >*{
+      font-size:8px;
+    }
+        .rights h4{
+          font-size: 17px;
+        }
+}
+@media only screen and (max-width: 340px) {
+  .social-container{
+    margin-right: 20px;
+  }  .end h1 {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .social-container {
+    margin-right: 10px;
+  }
+
+  .end h1 {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 300px){
+  .skillsInfo {
+      height: 170px;
+    }
+  .socials ul{
+      width: 40px;
+      height: 40px;
+    }
+  ul.socials li{
+    width: 40px;
+    height: 40px;
+  }
+    ul.socials li i{
+      font-size: 22px;
+    }
+    div.end{
+      width: 80%;
+    }
+        .callMe:hover+.hide{
+          font-size:16px;
+        }
+    img.callMe{
+      width: 50px;height: 50px;
+    }
+}
+@media only screen and (max-height: 900px){
+  .logo {
+    width: 50px;height: 50px;
+  }
+}
+@media only screen and (max-height: 770px){
+  .hireMe{
+    height:130vh;
+  }
+    .hireMeContainer{
+    height: 130vh;
+    }
+}
+@media only screen and (max-height: 610px) {
+  .wrapper{
+    height: 200vh;
+  }
+}
+@media only screen and (max-height: 650px) {
+  .hireMe {
+    height: 150vh;
+  }
+
+  .hireMeContainer {
+    height: 150vh;
+  }
 }
