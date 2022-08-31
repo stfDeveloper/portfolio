@@ -84,7 +84,7 @@ RandomObjectMover.prototype._moveOnce = function () {
 
   //console.log(this.current_position, next, delta, speed);
 
-  this.$object.style.transition = "transform " + speed + "s linear";
+  this.$object.style.transition = "transform " + speed + "s ease";
   this.$object.style.transform =
     "translate3d(" + next.x + "px, " + next.y + "px, 0)";
 

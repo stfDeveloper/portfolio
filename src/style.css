@@ -9,8 +9,9 @@ html {
 body {
   background: #212121 !important;
   width: 100vw !important;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
+
 :root {
   --shadow-color: 0deg 0% 29%;
   --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
@@ -304,6 +305,7 @@ div.m {
   background-color: black;
   width: 100vw;
   height: 110vh;
+  overflow-x: hidden;
 }
 .waviy {
   position: relative;
@@ -335,7 +337,6 @@ div.m {
   height: 100%;
   object-fit: cover;
 }
-
 .ac-container {
   max-width: 500px;
 }
@@ -390,8 +391,8 @@ div.m {
   );
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(33, 33, 33, 1);
   overflow: hidden;
+  width: 100%;
   height: 0;
   position: relative;
   -webkit-transition: height 0.7s ease-in-out, box-shadow 0.6s linear;
@@ -422,6 +423,7 @@ div.m {
 .ac-container input:checked ~ article.ac-small {
   object-fit: contain;
   height: 200px;
+  width: 100%;
 }
 .labelSocials {
   display: flex;
@@ -478,6 +480,7 @@ div.m {
   );
 }
 .about {
+  overflow: hidden;
   width: 90vw;
   background: rgba(0, 0, 0, 0, 7);
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
@@ -488,6 +491,7 @@ div.m {
   border-bottom: 1px solid #44a55614;
 }
 .aboutWrapper {
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,11 +499,13 @@ div.m {
   padding: 5%;
 }
 .HSkills {
+
   color: white;
   z-index: 1;
   padding-bottom: 60px;
 }
 .hardSkills {
+
   font-family: "Noto Serif", serif, bold;
   margin-bottom: 40px;
 }
@@ -528,11 +534,12 @@ div.m {
   padding: 5px;
   font-size: 20px;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
   text-align: center;
 }
 .whatIDoContainer {
+  overflow: hidden;
   padding-bottom: 50px;
   width: 100vw;
   z-index: 0;
@@ -544,6 +551,7 @@ div.m {
 }
 
 .whatIDo {
+  overflow: hidden;
   padding: 5%;
   width: 100vw;
   background: rgba(0, 0, 0, 0, 7);
@@ -558,6 +566,7 @@ div.m {
  
 }
 .myProjects {
+  overflow: hidden;
   padding-top: 100px;
   width: 90vw;
   margin: 0 auto;
@@ -578,14 +587,16 @@ div.m {
   color: #44A556;
 }
 .hireMeContainer {
+  overflow: hidden;
   position: relative;
   bottom: 0;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
 }
 .hireMe {
+  overflow: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0, 7);
 }
@@ -694,17 +705,20 @@ a.toAnchor {
 }
 
 .mapContainer {
+  display: flex;
+    justify-content: center;
+    align-items: center;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  height: 60vh;
-  width: 50vw;
+  height: 500px;
+    width: 500px;
 }
 #map {
-  height: 80%;
+  height: 100%;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .social-container {
   padding-right: 100px;
@@ -732,10 +746,6 @@ a.toAnchor {
 .socials li:hover {
   background-color: #212121 !important;
 }
-
-.social-container {
-  padding-right: 100px;
-}
 .socials a:hover {
   text-decoration: none;
 }
@@ -751,11 +761,8 @@ a.toAnchor {
   font-family: "Indie Flower", cursive;
   font-size: 50px;
   width: 100%;
-  height: 200px;
   color: white;
-  width: 500px;
-  position: relative;
-  right: 100px;
+  margin: auto;
 }
 img.callMe {
   width: 100px;
@@ -787,14 +794,10 @@ img.callMe {
   font-size: 50px;
   font-family: "Noto Serif", serif;
 }
-.btwCallme {
-  border: 0;
-  background-color: #212121;
-}
 .callMe:hover + .hide {
   position: absolute;
-  top: 150px;
-  width:500px;
+  bottom: -90px;
+  width:100%;
   display: block;
   border: 0;
 }
@@ -1003,6 +1006,21 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 900px) {
+  #map{
+    width:400px;
+    height:400px;
+  }
+  .hireMe{
+    height:100vh
+  }
+    .hireMeContainer {
+      height: 100vh
+    }
+  .labelSocials {
+      position: absolute;
+      left: -60px;
+      top: -300px;
+    }
   .skillsImg{
     width: 50%;
   }
@@ -1019,76 +1037,222 @@ div.closeX {
     .waviy p {
       font-size: 50px;
     }
+
     .end{
       right: 200px;
     }
+        
 }
 @media only screen and (max-width: 730px) {
+  .social-container{
+    padding-right: 50px;
+  }
   .skillsInfo {
     width:260px;
   }
-  .ac-container {
-      width: 80%;
-    }
-  .ac-container input:checked~article.ac-small{
-    height:250px;
-  }
+        
 }
 @media only screen and (max-width: 630px) {
   .end {
       right: 230px;
     }
-  .ac-container {
-    width: 75%;
-  }
-  .ac-container input:checked~article.ac-small {
-    height: 260px;
-  }
+   
 }
 @media only screen and (max-width: 600px) {
-  .ac-container {
-    width: 70%;
+  .social-container {
+      padding-right: 80px;
+    }
+  .mapContainer{
+    width: 350px;
+      height: 350px;
   }
-  .ac-container input:checked~article.ac-small {
-    height: 270px;
+#map {
+    width: 300px;
+    height: 300px;
   }
     .skillsInfo {
       width: 240px;
     }
 }
 @media only screen and (max-width: 580px) {
-  .ac-container {
-    width: 65%;
-  }
-
-  .ac-container input:checked~article.ac-small {
-    height: 280px;
-  }
 
   .skillsInfo {
     width: 240px;
   }
 }
-@media only screen and (max-width: 550px) {
-  .ac-container {
-    width: 70%;
-  }
-
-  .ac-container input:checked~article.ac-small {
-    height: 270px;
-  }
-
+@media only screen and (max-width: 550px) {  
+  .swiper{
+    width: 250px;
+    height:250px;
+  }  
+  .labelSocials {
+      position: absolute;
+      left: -25px;
+      top: -250px;
+    }
   .skillsInfo {
     width:220px;
-    height:300px;
   }
 }
 @media only screen and (max-width: 620px){
+  .social-container {
+      padding-right: 10px;
+    }
 div.intro>* {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .waviy p {
-    font-size: 40px;
+    font-size: 45px;
   }
+}
+@media only screen and (max-width: 605px){
+  .end h1{
+    font-size:20px;
+  }
+  img.aboutImg2{
+    width:50px;
+    height:50px;
+  }
+  .infocard2{
+    font-size:16px;
+  }
+  .skillsInfo {
+    width: 210px;
+    height: 230px;
+    }
+}
+@media only screen and (max-width: 555px){
+  div.intro>* {
+      font-size: 40px;
+    }
+    .waviy p {
+      font-size: 40px;
+    }
+}
+@media only screen and (max-width: 505px){
+
+  div.intro>* {
+      font-size: 37px;
+    }
+    .waviy p {
+    font-size: 37px;
+    }
+    .swiper {
+    width: 220px;
+    height: 220px;
+    }
+    .labelSocials {
+    position: absolute;
+    left: -25px;
+    top: -240px;
+    }
+
+    .social-container {
+    padding: 0;
+    margin-right: 20px;
+    }
+    .mapContainer{
+        width: 300px;
+      }
+   #map{
+    width:300px;
+   } 
+    .rights{
+      font-size:10px;
+    }
+}
+@media only screen and (max-width: 490px){
+  #map 
+  {height: 400px;
+    width: 200px;
+  }
+  .mapContainer{
+    height:400px;
+    width: 200px;
+  }
+    .social-container {
+      padding: 0;
+      margin-right: 70px;
+    }
+  div.intro>* {
+      font-size: 35px;
+    }
+    .waviy p {
+      font-size: 35px;
+    }
+    .swiper {
+      width: 200px;
+      height: 200px;
+    }
+        .skillsInfo span {
+          font-size: 15px;
+        }
+    .skillsInfo{
+      width:180px;
+      height: 160px;
+    }
+    .infoCard2 span {
+      font-size: 15px;
+    }
+    .hide{
+      font-size:30px;
+    }
+    
+}
+@media only screen and (max-width: 430px){
+  .skillsCard {
+      width: 100%;
+    }
+  
+    .skillsInfo {
+      width: 70%;
+      height: 130px;
+    }
+  .end{
+    padding-right: 50px;
+  }
+  img.callMe{
+    width:80px;
+    height: 80px;
+  }
+  .socials{
+    padding: 0;
+  }
+  .social-container {
+      padding: 0;
+      margin-right: 40px;
+      padding-left: 0;
+    }
+  .ac-container input:checked ~ article.ac-small{
+    height:220px;
+  }
+  div.intro>* {
+      font-size: 30px;
+    }
+  
+    .waviy p {
+      font-size: 30px;
+    }
+        .swiper {
+          width: 180px;
+          height: 180px;
+        }
+}
+@media only screen and (max-width: 400px){
+  .swiper{
+    width:160px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 370px){
+  
+  div.intro>* {
+      font-size: 26px;
+    }
+  
+    .waviy p {
+      font-size: 26px;
+    }
 }
