@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100vw !important;
 }
 body {
   background: #212121 !important;
@@ -31,6 +32,7 @@ body {
     25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 .lazy {
+    overflow-x: hidden !important;
   background-color: black;
   width: 100vw;
   height: 100vh;
@@ -249,12 +251,14 @@ div.m {
 }
 
 .subHeader {
+    overflow:hidden !important;
   width: 100vw;
   height: 5vh;
   position: absolute;
   top: 0;
 }
 .header {
+    overflow:hidden !important;
   /* From https://css.glass */
   background: #21212179;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -346,6 +350,7 @@ div.m {
 }
 
 .ac-container {
+  z-index: 2;
   width: 100%;
   margin: 20px auto 30px auto;
   text-align: left;
@@ -443,6 +448,9 @@ div.m {
   padding: 20px;
   margin: 10px;
 }
+.labelSocials a{
+  z-index: -1;
+}
 .labelSocials a:hover {
   text-decoration: none;
 }
@@ -465,6 +473,7 @@ div.m {
 }
 
 .aboutContainer {
+  overflow:hidden !important;
   width: 100vw;
   background: rgb(33, 33, 33);
   background: linear-gradient(
@@ -472,7 +481,7 @@ div.m {
     rgba(33, 33, 33, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
-
+  padding-bottom: 20px;
 }
 .about {
   width: 90vw;
@@ -482,7 +491,6 @@ div.m {
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
   margin: 0 auto;
-  border-bottom: 1px solid #44a55614;
 }
 .aboutWrapper {
   display: flex;
@@ -530,31 +538,30 @@ div.m {
   text-align: center;
 }
 .whatIDoContainer {
-  overflow: hidden;
-  padding-bottom: 50px;
+    overflow:hidden !important;
   width: 100vw;
   z-index: 0;
-  background-image: url("../img/—Pngtree—polka dot pattern_5956638.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 100%;
 }
-
 .whatIDo {
   overflow: hidden;
-  padding: 5%;
+  padding-top: 50px;
   width: 100vw;
   background: rgba(0, 0, 0, 0, 7);
+  background-image: url("../img/—Pngtree—polka dot pattern_5956638.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .myProjectsContainer {
+  padding-bottom: 50px;
   background: rgb(33, 33, 33);
   background: linear-gradient(
     0deg,
     rgba(0, 0, 0, 1) 100% rgba(33, 33, 33, 1) 0%
   );
   width: 100vw;
- 
+    overflow:hidden !important;
 }
 .myProjects {
   overflow: hidden;
@@ -569,7 +576,7 @@ div.m {
 }
 .h1proj{
   position: relative;
-  top: -70px;
+  top: -50px;
 }
 .showProject h1{
   position: absolute;
@@ -578,7 +585,7 @@ div.m {
   color: #44A556;
 }
 .hireMeContainer {
-  overflow: hidden;
+    overflow:hidden !important;
   position: relative;
   bottom: 0;
   width: 100vw;
@@ -945,7 +952,8 @@ div.closeX {
     background-color: black;
     height: 200vh;
     flex-direction: column;
-  }
+    overflow-x: hidden !important;
+    }
   
   div.intro>*{ 
     font-size: 80px;
@@ -1022,11 +1030,29 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 910px) {
-
-  .buttonProj:focus + .showProject{
-    position: relative;
+  body {
+      width: 100% !important;
+      overflow-x: hidden !important;
+    }
+  .buttonProj:hover + .showProject{
+    display: flex;
     height:75%;
+    padding-top: 50px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 0.1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 13px;
+      z-index: 2;
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
   }
+   
   #map{
     width:400px;
     height:400px;
@@ -1046,6 +1072,7 @@ div.closeX {
     width: 50%;
   }
     div.video{
+      margin-top: 30px;
     width: 100%;
   }
 }
@@ -1082,7 +1109,7 @@ div.closeX {
    
 }
 @media only screen and (max-width: 600px) {
-  .buttonProj:focus+.showProject {
+  .buttonProj:hover+.showProject {
       height: 65%;
     }
 .whatIDoContainer {
