@@ -40,13 +40,6 @@ body {
   animation: lazy 2s forwards;
   position: fixed;
 }
-.ball {
-  width: 100%;
-  height: 100px;
-  background-color: red;
-  border-radius: 50%;
-  animation: grow 2s forwards;
-}
 @keyframes grow {
   50% {
     transform: scale(20);
@@ -304,7 +297,7 @@ div.m {
 .wrapper {
   background-color: black;
   width: 100vw;
-  padding-top: 150px;
+  height: 100vh;
   overflow-x: hidden;
 }
 .waviy {
@@ -479,7 +472,6 @@ div.m {
     rgba(33, 33, 33, 1) 0%,
     rgba(0, 0, 0, 1) 100%
   );
-  padding-bottom: 100px;
 
 }
 .about {
@@ -500,13 +492,11 @@ div.m {
   padding: 5%;
 }
 .HSkills {
-
   color: white;
   z-index: 1;
   padding-bottom: 60px;
 }
 .hardSkills {
-
   font-family: "Noto Serif", serif, bold;
   margin-bottom: 40px;
 }
@@ -675,7 +665,8 @@ a.toAnchor {
   height: 100%;
   object-fit: cover;
   border-radius: 10%;
-  background-color: #cc0000;
+  border: 1px solid rgba(255, 255, 255, 0.084);
+  background-color: #2121213e;
 }
 .aboutImg2 {
   width: 200px;
@@ -767,12 +758,12 @@ a.toAnchor {
 }
 
 .end {
-  font-family: "Indie Flower", cursive;
   font-size: 50px;
   width: 100%;
   color: white;
   margin: auto;
 }
+
 img.callMe {
   width: 100px;
   height: 100px;
@@ -852,9 +843,11 @@ div.video {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .video video {
-  width: 80%;
+  object-fit: cover;
+  width: 70%;
 }
 .test2,
 .videoText {
@@ -945,9 +938,12 @@ div.closeX {
     }
   .whatIDoContainer {background-size: 200%;}
   /* For tablets: */
+  .section1{
+    height:100vh
+  }
   .wrapper {
     background-color: black;
-    height: 160vh;
+    height: 200vh;
     flex-direction: column;
   }
   
