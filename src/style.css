@@ -5,31 +5,12 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  width: 100vw !important;
+  width: 100% !important;
 }
 body {
   background: #212121 !important;
   width: 100vw !important;
   overflow-x: hidden !important;
-}
-
-:root {
-  --shadow-color: 0deg 0% 29%;
-  --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-    0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.34),
-    1px 2px 2.5px -2.5px hsl(var(--shadow-color) / 0.34);
-  --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
-    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
-    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
-    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
-  --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.34),
-    1.5px 2.9px 3.7px -0.4px hsl(var(--shadow-color) / 0.34),
-    2.7px 5.4px 6.8px -0.7px hsl(var(--shadow-color) / 0.34),
-    4.5px 8.9px 11.2px -1.1px hsl(var(--shadow-color) / 0.34),
-    7.1px 14.3px 18px -1.4px hsl(var(--shadow-color) / 0.34),
-    11.2px 22.3px 28.1px -1.8px hsl(var(--shadow-color) / 0.34),
-    17px 33.9px 42.7px -2.1px hsl(var(--shadow-color) / 0.34),
-    25px 50px 62.9px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 .lazy {
     overflow-x: hidden !important;
@@ -50,6 +31,7 @@ body {
     transform: scale(7);
   }
   100% {
+    display:none;
     transform: scale(0);
   }
 }
@@ -258,7 +240,7 @@ div.m {
   top: 0;
 }
 .header {
-    overflow:hidden !important;
+    overflow-x:hidden !important;
   /* From https://css.glass */
   background: #21212179;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -303,6 +285,9 @@ div.m {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+}
+.section2{
+  padding-top: 50px;
 }
 .waviy {
   position: relative;
@@ -500,6 +485,7 @@ div.m {
   padding: 5%;
 }
 .HSkills {
+  overflow-x: hidden;
   color: white;
   z-index: 1;
   padding-bottom: 60px;
@@ -552,6 +538,7 @@ div.m {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    padding-bottom: 50px;
 }
 .myProjectsContainer {
   padding-bottom: 50px;
@@ -589,12 +576,12 @@ div.m {
   position: relative;
   bottom: 0;
   width: 100vw;
-  height: 130vh;
+  height: 100vh;
 }
 .hireMe {
   overflow: hidden;
   width: 100vw;
-  height: 130vh;
+  height: 100vh;
   margin: 0 auto;
   background: rgba(0, 0, 0, 0, 7);
 }
@@ -644,7 +631,7 @@ a.toAnchor {
 
 .AboutCard1 {
   width: 300px;
-  height: 350px;
+  height: 450px;
   border-radius: 20%;
 }
 .infoCard1 {
@@ -812,7 +799,7 @@ img.callMe {
   font-family: "Noto Serif", serif, bold;
   width: 100vw;
   height: 50px;
-  position: absolute;
+  position:absolute;
   bottom: 0;
   background-color: #44A556;
   color: white;
@@ -1034,6 +1021,9 @@ div.closeX {
       width: 100% !important;
       overflow-x: hidden !important;
     }
+        .buttonProj:hover .aboutImg3 {
+          background-color: rgb(68, 165, 86) !important;
+        }
   .buttonProj:hover + .showProject{
     display: flex;
     height:75%;
@@ -1137,6 +1127,46 @@ div.closeX {
   }
 }
 @media only screen and (max-width: 550px) {  
+  section.appearSection{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .wrapper{
+    overflow-x: hidden;
+  }
+  .section1{
+    overflow-x: hidden;
+  }
+  .section2 {
+    overflow-x: hidden;
+  }
+  .aboutContainer{
+    overflow-x: hidden;
+  }
+  .about {
+    overflow-x: hidden;
+  }
+    .whatIDoContainer {
+      overflow-x: hidden;
+    }
+  .reveal2 {
+      position: relative;
+      transform: translateY(250px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
+  
+    .reveal3 {
+      position: relative;
+      transform: translateY(250px);
+      opacity: 0;
+      transition: 1s all ease;
+    }
   .swiper{
     width: 250px;
     height:250px;
